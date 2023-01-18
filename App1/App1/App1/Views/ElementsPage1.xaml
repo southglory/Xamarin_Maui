@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.ElementsPage1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btn1" Text="배경컬러번경" TextColor="White" BackgroundColor="DarkSalmon" BorderWidth="5" CornerRadius="50" Clicked="btn1_Clicked">
+                
+            </Button>
+            <Label x:Name="lbl1" Text="레이블입니다." TextColor= "DarkKhaki" Background="AliceBlue" FontSize="Large" FontAttributes="Bold"/>
+            <Label Text="레이블입니다." TextColor= "DarkKhaki" Background="AliceBlue" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="End"/>
+            <Label Text="레이블입니다." TextColor= "DarkKhaki" Background="AliceBlue" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+            <Label Text="레이블입니다." TextColor= "DarkKhaki" Background="AliceBlue" FontSize="Large" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Label Text="30레이블입니다." TextColor= "DarkKhaki" Background="Red" FontSize="30" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Entry Placeholder="텍스트입력" TextColor="Salmon" FontSize="Large" FontAttributes="Bold" Keyboard="Text"/>
+            <Entry Placeholder="숫자입력" BindingContext="{x:Reference stepper1}" TextColor="Red" FontSize="{Binding Value}" FontAttributes="Bold" Keyboard="Numeric"/>
+            <Editor Placeholder="메시지입력" BindingContext="{x:Reference slider1}" TextColor="Red" BackgroundColor ="{OnPlatform Android=Blue, UWP=White}" FontSize="{Binding Value}" FontAttributes="Bold" HeightRequest="250"/>
+            <Slider x:Name="slider1" Maximum="100" Minimum="10" Value="15" MinimumTrackColor="Salmon" MaximumTrackColor="DarkRed"></Slider>
+            <Stepper x:Name="stepper1" Maximum="50" Minimum="5" Value="20" ValueChanged="stepper1_ValueChanged"></Stepper>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

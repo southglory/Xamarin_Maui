@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Views.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="이게 자마린이다! XAML은 바로바로 업댓되는군."
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="Small" TextColor="CornflowerBlue"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
